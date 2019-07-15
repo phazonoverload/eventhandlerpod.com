@@ -1,22 +1,17 @@
 <template>
   <div>
-    <div class='w'>
-      <Header />
-      <!-- <Host /> -->
-      <nuxt id='page' />
-    </div>
+    <Header />
+    <nuxt id='page' />
     <Footer />
   </div>
 </template>
 
 <script>
 import Header from '~/components/Header';
-import Host from '~/components/Host';
 import Footer from '~/components/Footer';
 export default {
   components: {
     Header,
-    Host,
     Footer
   }
 }
@@ -38,24 +33,30 @@ export default {
 }
 
 body {
-  background: url('~assets/tile.png');
-  background-size: 250px;
-  font-family: 'Space Mono', sans-serif;
-  font-weight: normal;
-  color: var(--blue);
-  padding-bottom: 6em;
+  font-family: 'Space Mono', monospace;
 }
 
 .w {
   max-width: 960px;
-  margin: 2em auto;
+  margin: 0 auto;
   padding: 0 1em;
 }
 
-#page {
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a.theme {
   background: var(--pink);
-  border: 5px solid var(--blue);
-  box-shadow: 0.5em 0.5em 0 var(--blue);
-  padding: 1em;
+  padding: 0.25em 0.5em;
+  box-shadow: 0.25em 0.25em 0 var(--blue);
+  border: 2px solid var(--blue);
+}
+
+@media screen and (max-width: 800px) {
+  .m-hide {
+    display: none;
+  }
 }
 </style>

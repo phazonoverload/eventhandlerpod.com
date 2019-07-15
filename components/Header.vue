@@ -1,77 +1,44 @@
 <template>
-  <div class="top">
-    <n-link to='/' class='logo'>
-      <img src="~/assets/logo.svg" alt="event.Handler() Podcast">
-    </n-link>
-    <div class="content" >
-      <h2>A podcast about running developer events</h2>
-      <div class="icons">
-        <a href="https://twitter.com/eventHandlerPod">
-          <img src='~/assets/twitter.svg' alt='Twitter logo'>
-        </a>
-      </div>
+  <header>
+    <div class="w">
+      <n-link to='/' class='logo'>
+        <img src="~/assets/logo.svg" alt="event.Handler() Logo">
+      </n-link>
+      <a href="https://airtable.com/shrAUsZpKwxfH9DVc" class='theme'>Request a Topic</a>
+      <a href="https://twitter.com/eventHandlerPod" class='theme m-hide'>Twitter</a>
     </div>
-  </div>
+  </header>
 </template>
 
 <style scoped>
-
-.top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2em;
+header {
+  padding: 1em 0;
+  border-bottom: 1px solid var(--pink);
 }
 
-.top .logo img {
-  max-width: 250px;
-  margin: 0 auto;
-  display: block;
-}
-
-.top .content {
-  padding: 0.25em 0.25em 0.25em 0.5em;
-}
-
-.top .content h2 {
-  background: var(--pink);
-  color: var(--blue);
-  text-transform: uppercase;
-  padding-left: 0.5em;
-}
-
-.top .content p {
-  text-align: right;
-}
-
-.top .icons {
+header .w {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
 }
 
-.top .icons img {
-  width: 32px;
-  margin-top: 0.5em;
-  margin-left: 0.5em;
+.logo {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.logo img {
+  height: 4em;
+}
+
+a {
+  margin-left: 2em;
 }
 
 @media screen and (max-width: 800px) {
-  .top {
-    flex-direction: column;
-  }
-  .top .content {
-    margin-top: 1em;
-  }
-  .top .icons {
-    justify-content: center;
-    margin-top: 1em;
-  }
-  .top .content h2 {
-    text-align: center;
-    font-size: 1.25em;
-    padding: 0.25em;
+  a.theme {
+    font-size: 0.8em;
   }
 }
 </style>
