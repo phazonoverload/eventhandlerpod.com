@@ -30,6 +30,7 @@ header .w {
 
 .logo img {
   height: 4em;
+  display: block;
 }
 
 a {

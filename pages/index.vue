@@ -3,7 +3,7 @@
     <div id="hero">
       <div class="w">
         <h1>A podcast about running developer events</h1>
-        <h2>Presented by <a href='https://underland.events'>Underland Events</a></h2>
+        <h2>Presented by <a href='https://twitter.com/redroxprojects'>Amy Dickens</a> &amp; <a href='https://twitter.com/_phzn'>Kevin Lewis</a></h2>
       </div>
     </div>
     <Episodes />

@@ -8,7 +8,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'A podcast from developer events company Underland.' },
+      { hid: 'description', name: 'description', content: 'A developer events podcast.' },
       { property: 'og:image', content: 'https://eventhandler.fm/og.png' }
     ],
     link: [

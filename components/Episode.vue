@@ -1,7 +1,7 @@
 <template>
   <div>
     <n-link class='episode' :to='details.url' v-if='details.live'>
-      <img :src="art" alt="Episode art">
+      <img :src="art" alt="">
       <div class="meta">
         <h2>{{details.title}}</h2>
         <p>{{details.date}}</p>
@@ -9,7 +9,7 @@
     </n-link>
 
     <div v-else class='episode'>
-      <img :src="art" alt="Episode art">
+      <img :src="art" alt="">
       <div class="meta">
         <h2>{{details.title}}</h2>
         <p>Coming soon</p>
